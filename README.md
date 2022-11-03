@@ -21,6 +21,7 @@ Class Alumni
 * Further education:
   - Postgraduate_degree
   - Postgraduate_university
+  - Graduate_year
 * Other information:
   - Note 
   
