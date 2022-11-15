@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block block1 %}
+<center>
+<h3>Registrasi Alumni</h3>
+
+  <table>
+<form action = "" method = "post">
+	{% csrf_token %}
+
+	{{form }}
+
+ </table>
+ 	<input type="submit" value="Daftar"><br>
+ </form>
+</center>
+<br><br>
+{% endblock %}

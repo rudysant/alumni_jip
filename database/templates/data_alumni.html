@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block block1 %}
+<center>
+<h3>Data Alumni</h3>
+<table style="width: auto;" class="table table-striped">
+    <tr bgcolor='lightgrey'>
+        <td><b>Nama</b></td>
+        <td><b>Angkatan</b></td>
+
+    </tr>
+    {% for x in alumni %}
+    <tr>
+
+        <td><a href ="/detail_nama/{{ x.id }}">{{ x.nama_lengkap }}</a></td>
+        <td align="center"><a href ="/detail_angkatan/{{ x.tahun_masuk }}">{{ x.tahun_masuk }}</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+</center>
+{% endblock %}

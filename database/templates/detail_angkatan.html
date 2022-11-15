@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block block1 %}
+<center>
+<h3>Daftar Alumni</h3>
+<table style="width: auto;" class="table table-striped">
+    <tr bgcolor='lightgrey'>
+        <td><b>Nama</b></td>
+        <td align="center"><b>Angkatan</b></td>
+
+    </tr>
+    {% for x in detail_angkatan %}
+    <tr>
+
+        <td>{{ x.nama_lengkap }}</td>
+        <td>{{ x.tahun_masuk }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</center>
+{% endblock %}

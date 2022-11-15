@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block block1 %}
+<br>
+<center>
+<h3>Detail alumni</h3>
+
+<table style="width: auto;" class="table table-striped">
+    {% for y in detail_nama %}
+    <tr>
+        <td><b>{{ y.nama_lengkap }}</b></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td> NPM </td><td> : </td><td> {{ y.npm }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Angkatan</td><td> : </td><td>{{ y.tahun_masuk }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Alumni</td><td> : </td><td> {{ y.tahun_lulus }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Dosen wali</td><td> :</td><td> {{ y.dosen_wali }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Pekerjaan sekarang</td><td> : </td><td> {{ y.jabatan_sekarang }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Instansi</td><td> : </td><td> {{ y.nama_instansi }}</td>
+    </tr>
+    <tr>
+        <td></td><td>Resume</td><td> :</td><td> {{ y.resume }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</center>
+<br><br>
+{% endblock %}
